@@ -1,14 +1,23 @@
 package com.gjh.base.model;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
 /**
  * Result of API
  * @author guangjh
  * @version 1.0
  * @date 2020/12/15 21:51
  */
+@ApiModel(description = "Result of API")
 public class ApiResult<T> {
+    @ApiModelProperty("status code")
     private Integer status;
+
+    @ApiModelProperty("message, success or error message")
     private String message;
+
+    @ApiModelProperty("data")
     private T data;
 
     public static <T> ApiResult ok(T data) {
