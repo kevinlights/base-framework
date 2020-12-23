@@ -5,7 +5,6 @@ import com.gjh.base.auth.model.SysUser;
 import com.gjh.base.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.Cacheable;
-import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 /**
