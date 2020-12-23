@@ -1,6 +1,6 @@
 app:
   swagger:
-    basePackage: com.gjh.base.controller
+    basePackage: com.gjh.base.controller,com.gjh.base.auth.controller
     title: Base Framework Project RESTful APIs
     description: Base Framework
     serviceUrl: http://127.0.0.1:8080/api
